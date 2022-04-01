@@ -1,0 +1,21 @@
+{
+    "pluginsFile": "cypress/plugins/index.js",
+    "supportFile": "cypress/support/index.js",
+    "testFiles": "**/*.spec.js",
+    "viewportWidth": 1280,
+    "viewportHeight": 720,
+    "watchForFileChanges": false,
+    "ignoreTestFiles": [
+      "**/manage_add_bank.spec.js",
+      "**/manage_add_paypal.spec.js"
+    ],
+    "reporter": "autoset-status-cypress-testrail-reporter",
+    "reporterOptions": {
+      "host": "https://telusinternational.testrail.io",
+        "username": "samundra.dhakal@telusinternational.com",
+        "password": "password",
+        "projectId": "2",
+        "runId": "8"
+    },
+    "chromeWebSecurity": false
+  }
